@@ -1,0 +1,131 @@
+:root {
+    --bg-login-: #dcdcdc;
+    --bg-: #b7b7b7;
+    --font-: 'Montserrat', sans-serif;
+    --bg-button: #0c8cd3;
+    --bg-button-hover: #3395c9;
+    --bg-button-active: #49abe0;
+    
+}
+
+body{
+	font-family: var(--font-)
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+ }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-);
+}
+
+.login {
+    background-color: var(--bg-login-);
+    width: 29vw;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-input input{
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+}  
+
+.login-content h1 {
+    font-weight: 200;
+    text-align: center;
+}
+
+.login-content button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bg-button);
+    color: #FFF;
+    cursor: pointer;
+    transition: all .2s;
+    margin-top: 1em;
+}
+
+.login-content button:hover {
+    background-color: var(--bg-button-hover);
+}
+
+.login-content button:active {
+    background-color: var(--bg-button-active);
+    transform: scale(0.9);
+}
+
+.login-text {
+    text-align: center;
+    margin: 0 auto ;
+    color: #4d4d4d;
+}
+
+.login-social {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.github {
+    background-image: url("../../assets/logo-github.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp {
+    background-image: url("../../assets/logo-whatsapp.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.icon {
+    padding: 10px;
+}
+
+.icon:hover {
+    background-color: var(--bg-);
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.icon:active{
+    transform: scale(.9);
+}
+
+label {
+    margin: 0 5px;
+}
+
+.login-input div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
