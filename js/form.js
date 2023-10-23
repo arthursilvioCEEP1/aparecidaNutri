@@ -27,6 +27,8 @@ function obtemPacienteDoFormulario(form) {
 
     var paciente = {
         nome: form.nome.value,
+        idade: form.idade.value,
+        telefone: form.telefone.value,
         peso: form.peso.value,
         altura: form.altura.value,
         gordura: form.gordura.value,
@@ -41,6 +43,8 @@ function montaTr(paciente) {
     pacienteTr.classList.add("paciente");
 
     pacienteTr.appendChild(montaTd(paciente.nome, "info-nome"));
+    pacienteTr.appendChild(montaTd(paciente.idade, "info-idade"));
+    pacienteTr.appendChild(montaTd(paciente.telefone, "info-telefone"));
     pacienteTr.appendChild(montaTd(paciente.peso, "info-peso"));
     pacienteTr.appendChild(montaTd(paciente.altura, "info-altura"));
     pacienteTr.appendChild(montaTd(paciente.gordura, "info-gordura"));
@@ -63,6 +67,14 @@ function validaPaciente(paciente) {
 
     if (paciente.nome.length == 0) {
         erros.push("O nome não pode ser em branco");
+    }
+
+    if (paciente.idade.length == 0) {
+        erros.push("O campo da idade não pode ser em branco");
+    }
+
+    if (paciente.telefone.length == 0) {
+        erros.push("O campo do telefone não pode ser em branco");
     }
 
     if (paciente.gordura.length == 0) {
