@@ -1,6 +1,6 @@
 :root {
 	--font-: 'Montserrat', sans-serif;
-    --bg-: #b7b7b7;
+    --bg-: #c1c1c1;
     --bg-table-: #dcdcdc;
 	--bg-button: #0c8cd3;
 	--bg-button-reset: #ef7575;
@@ -23,7 +23,7 @@ main {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 90vh;
+	height: 80vh;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -168,6 +168,15 @@ header h1 {
 	letter-spacing: 1px;
 	animation: move-rtl 9000ms linear infinite;
 	font-size: 20px;
+}
+
+.banner {
+	border-radius: 10px;
+	margin-bottom: 1em;
+	background-image: url(/assets/banner.jpg);
+	background-position: center;
+	width: 50vw;
+	height: 30vh;
 }
 
 @keyframes move-rtl {
